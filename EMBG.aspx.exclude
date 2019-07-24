@@ -1,0 +1,35 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="EMBG.aspx.cs" Inherits="EMBG" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+<script type = "text/javascript" >
+    document.getElementById("Button1").onclick = Button1_Click();
+    function Button1_Click() {
+        var embg = document.getElementById("embg").value;
+        PageMethods.CheckEmbg(embg, OnSuccess);
+        
+    }
+    function OnSuccess(a) {
+        alert(a);
+    }
+       
+    
+</script>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+       
+        <div>
+            <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true"></asp:ScriptManager>
+        <asp:TextBox ID="embg" runat="server" ></asp:TextBox>
+        <asp:Button ID="Button1" runat="server" Text="Enter" OnClick="Button1_Click" />
+     
+    </div>
+    </form>
+</body>
+</html>

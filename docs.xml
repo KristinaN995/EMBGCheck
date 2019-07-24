@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<docs>
+  <members name="WebService">
+    <CheckEmbg>
+      <summary>
+      Web Method for Ckecking EMBG
+      Gets the EMBG
+      Checks if it's valid:day,month,year,gender,city code,CRC
+      </summary>
+      <returns>
+      Returns true if the EMBG is correct and false if it's a not valid EMBG
+      </returns>
+    </CheckEmbg>
+    <CheckDate>
+      <summary>
+      Checking the date
+      Checks if it's valid:day,month,year
+      </summary>
+      <returns>
+      Returns true if it's an existing date and false if it's not
+      </returns>
+    </CheckDate>
+    <CRCKalkulacija>
+      <summary>
+      Calculating the CRC
+      </summary>
+      <returns>
+      Returns the calculated CRC
+      </returns>
+    </CRCKalkulacija>
+  </members>
+</docs>
